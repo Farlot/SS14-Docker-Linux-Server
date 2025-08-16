@@ -6,7 +6,7 @@ RUN apt-get -y update && \
     apt-get -y install curl unzip wget git
 
 # Download and extract SS14 server
-ADD https://wizards.cdn.spacestation14.com/fork/wizards/version/970ce38d657bbaf8d41c1135e6e79b576f74fc3e/SS14.Server_linux-x64.zip SS14.Server_linux-x64.zip
+ADD https://wizards.cdn.spacestation14.com/fork/wizards/version/970ce38d657bbaf8d41c1135e6e79b576f74fc3e/file/SS14.Server_linux-x64.zip SS14.Server_linux-x64.zip
 RUN unzip SS14.Server_linux-x64.zip -d /ss14-default/
 
 # Download and build Watchdog
